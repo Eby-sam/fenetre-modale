@@ -16,17 +16,9 @@ let windowModaleI = function (back){
         let newWindoz = document.createElement('div');
         newWindoz.style.width = this.widthT2 + "px";
         newWindoz.style.height = this.heigthH2 + "px";
-        newWindoz.style.marginLeft = 'auto';
-        newWindoz.style.marginRight = 'auto';
-        newWindoz.style.marginTop = '12rem';
-        newWindoz.style.backgroundColor = 'rgb(255 255 255 / 98%)';
-        newWindoz.style.border = '20px solid black';
-        newWindoz.style.borderRadius = '10px';
+        newWindoz.id = 'mod';
+
         newWindoz.innerHTML = txt;
-        newWindoz.style.fontSize = '2em';
-        newWindoz.style.display = 'flex';
-        newWindoz.style.justifyContent = 'center';
-        newWindoz.style.alignItems = 'center'
         windoz.appendChild(newWindoz);
         newWindoz.addEventListener('click', () => windoz.remove());
     }
